@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Animated } from "react-animated-css";
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        {/* <div className='Image'>
+          <img src={require('./tre.jpg')} alt=''/>
+        </div> */}
+        {/* <Animated animationIn="tada" animationOut="fadeOut" animationOutDelay={2222} isVisible={false}>
+          <img src={require('./images/mae-mu-1438149-unsplash.jpg')} alt='' width='100%' />
+        </Animated>
+        <Animated animationIn="tada" animationOut="fadeOut" animationOutDelay={2222} isVisible={true}>
+          <img src={require('./images/mae-mu-1438149-unsplash.jpg')} alt='' width='100%' />
+        </Animated> */}
+        <ScrollAnimation animateIn="fadeIn" offset={0}>
+          Some Text
+        </ScrollAnimation>
       </div>
     );
   }
