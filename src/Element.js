@@ -7,7 +7,7 @@ import { Animated } from "react-animated-css";
 function Element(props) {
     return (
         <div>
-            <ScrollAnimation animateIn="fadeIn" animationOut="fadeOut" animationInDelay={3} isVisible={false} offset={520}>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" >
                 {/* {props.text} */}
                 <div className="animated fadeIn slower">
                     {props.text}
