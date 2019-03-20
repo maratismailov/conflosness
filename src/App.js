@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-// import { Animated } from "react-animated-css";
-// import ScrollAnimation from 'react-animate-on-scroll';
-import "animate.css";
 import Element from './Element';
 
 class App extends Component {
@@ -12,19 +9,19 @@ class App extends Component {
     this.state = {
       elementsText: [
         {
-          text: 'Тааак, беспорядок вокруг',
+          text: 'Какого чёрта вы чихаете тут!',
           id: 1
         },
         {
-          text: 'Интересно, что с глазом',
+          text: 'И кашляете',
           id: 2
         },
         {
-          text: 'Не конъюнктивит',
+          text: 'Сидели бы по домам, блин',
           id: 3
         },
         {
-          text: 'Сифилис, бруцеллёз, туберкулёз',
+          text: 'Мало ли что вы разносите тут',
           id: 4
         },
         {
@@ -93,12 +90,11 @@ class App extends Component {
     return (
       <div>
         {this.state.elementsText.map(element => {
-          // const background = require('./images/1.jpg');
           return (
             <div key={element.id} className='Element'>
-              <Element 
-              text={element.text} 
-              img={element.imgPath}
+              <Element
+                text={element.text}
+                img={element.imgPath}
               />
             </div>
           )
